@@ -25,3 +25,13 @@ Make sure you save and require the MySQL and Prompt npm packages in your homewor
     * This means updating the SQL database to reflect the remaining quantity. 
     * Once the update goes through, show the customer the total cost of their purchase. 
 
+## Technologies Used: 
+* npm packages 
+* mySQL / Sequel Pro 
+* Node.js 
+
+## Submission Screenshots: 
+* Sequel Pro Database: 
+
+
+
