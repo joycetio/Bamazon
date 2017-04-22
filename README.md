@@ -31,7 +31,36 @@ Make sure you save and require the MySQL and Prompt npm packages in your homewor
 * Node.js 
 
 ## Submission Screenshots: 
-* Sequel Pro Database: 
+* Sequel Pro Database: before customer buys any products. 
+![Sequel Pro](images/initial-sequalProSS.png)
+
+* Bamazon: 
+* At first, it will show a list of products available in the store. 
+* It then asks the user what they would like to buy, and how many they would like. 
+
+![Bamazon](images/01.png)
+
+![Bamazon](images/02.png)
+
+![Bamazon](images/03.png)
+
+* The database is then updated after the customer orders, in this case, a Pool Table. 
+
+![After customer buys](images/after-sequelProSS.png)
+
+## Code Explanation: 
+* Creates a connection between MySQL Database and Node. 
+````
+var mysql = require("mysql");
+
+var connection = mysql.createConnection({
+    host: " ",
+    port: " ",
+    user: " ",
+    password: "",
+    database: "Bamazon"
+});
+````
 
 
 
