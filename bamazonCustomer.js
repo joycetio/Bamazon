@@ -59,12 +59,9 @@ connection.query("SELECT * FROM products", function(err, res) {
 
         //num of stocks available in store
         var itemStocks = chosenProduct.stock_quantity;
-        // console.log("stocks available: " + itemStocks);
 
         if (unitNum < chosenProduct.stock_quantity) {
             var newQuantity = chosenProduct.stock_quantity - unitNum
-            // console.log("new stocks quantity: " + newQuantity);
-
 
             connection.query("UPDATE products SET ? WHERE ?", [{
                 stock_quantity: newQuantity
